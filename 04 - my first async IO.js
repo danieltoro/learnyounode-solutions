@@ -1,6 +1,8 @@
 var fs = require('fs');
 
-fs.readFile(process.argv[2], 'utf8', function(err, data){
+var dir = process.argv[2]
+
+fs.readFile(dir, 'utf8', function(err, data){
 	var numeroDeLineas = data.split('\n').length -1;
 	console.log(numeroDeLineas);
 	

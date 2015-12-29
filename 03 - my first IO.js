@@ -1,7 +1,9 @@
 var fs = require('fs');
 
+var dir = process.argv[2]
+
 var numeroDeLineas = 
-	fs.readFileSync(process.argv[2], 'utf8')
+	fs.readFileSync(dir, 'utf8')
 		.split('\n')
 		.length -1;
 
